@@ -23,7 +23,4 @@ A low-latency, event-driven trading system simulating HFT architecture using rea
 
 Market Data → Event Bus → Order Book → Visualization
 
-## Run
 
-pip install -r requirements.txt  
-python main.py
