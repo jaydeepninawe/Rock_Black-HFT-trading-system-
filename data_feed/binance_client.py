@@ -32,13 +32,11 @@ class BinanceClient:
                 msg = await ws.recv()
                 data = json.loads(msg)
 
-                U = data["U"]
                 u = data["u"]
 
-                # Ignore outdated
                 if u <= self.last_update_id:
                     continue
-                
+
                 self.last_update_id = u
 
                 event = Event(
